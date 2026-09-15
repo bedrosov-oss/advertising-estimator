@@ -1,5 +1,5 @@
 {
-  "version": "1.0.11",
+  "version": "1.0.12",
   "updated": "2026-09-15",
   "articles": [
     {
@@ -916,10 +916,14 @@
     },
     {
       "id": "release",
-      "title": "Что нового в 1.0.11",
+      "title": "Что нового в 1.0.12",
       "category": "ОБ ЭТОМ ВЫПУСКЕ",
-      "lead": "Уточнена переносимость проверок сборки на Windows и macOS: UTF-8 для вывода кириллицы и сравнение физических временных путей. Сохраняются настройка Render и все функции 1.0.10.",
+      "lead": "Исправлена доставка готового приложения Mac через GitHub: TAR.GZ сохраняет права запуска и символьные ссылки. Самопроверка повторяется после распаковки скачиваемого пакета.",
       "steps": [
+        {
+          "title": "Скачайте подходящую сборку",
+          "text": "В GitHub Actions откройте успешный запуск Desktop checks and builds. Windows: скачайте AdvertisingEstimator-windows-2022 и распакуйте целиком. Mac с Apple Silicon: macos-14; Mac с Intel: macos-15-intel. На Mac внутри ZIP распакуйте AdvertisingEstimator-macOS.tar.gz, затем откройте полученное приложение. Для скачивания артефакта нужен вход в GitHub."
+        },
         {
           "title": "Проверки настольной сборки",
           "text": "GitHub Actions использует UTF-8 для русского вывода Windows. Проверка запуска на Mac учитывает системную ссылку /var → /private/var. Смотрите итог каждого задания отдельно; успешная серверная проверка не означает готовность сборки Windows или Mac."
@@ -953,13 +957,13 @@
         "Номер документа показывается из самого файла инструкции и сравнивается с версией программы.",
         "Обновление текстов — часть работы над новым выпуском; программа не сочиняет инструкцию автоматически."
       ],
-      "keywords": "версия 1.0.11 интернет github render автоподбор доставка"
+      "keywords": "версия 1.0.12 интернет github render автоподбор доставка"
     }
   ],
   "review": {
-    "version": "1.0.11",
-    "note": "Инструкция 1.0.11 описывает подтверждённые ошибки настоящих Windows/Mac runners и исправления: UTF-8 в workflow и физический временный путь Mac. Уточнено раздельное чтение результатов сервера, сборки и ручной проверки окна.",
-    "content_sha256": "e6e4fc1dd54d4296ff93630d58bed5c8e8afe81d01162c9730879afca0d4c377",
+    "version": "1.0.12",
+    "note": "Инструкция 1.0.12 уточняет скачивание артефактов Windows, Apple Silicon и Intel, вложенный TAR.GZ и проверку распакованного приложения. Упаковка Mac сохраняет права запуска и ссылки согласно ограничению GitHub upload-artifact.",
+    "content_sha256": "d8c9d4820cb8464500936c14f65bfe0fa1f4606cec39ea4a9b7a969aa61a53e3",
     "source_sha256": {
       "BUILD_MAC.command": "f56d75c8a82968a67d30f54521a57cb79625b555aabf732370d015083eece714",
       "BUILD_WINDOWS.bat": "84190db3e17f97e32ab582424ca4ab3dee7a0b9390477a2683288c189fde2670",
@@ -997,14 +1001,14 @@
       "scripts/install-python.applescript": "2025d135b17c51fb9664a38f7af3637c57ab60115ad00e47e77e19dd83e163c4",
       "scripts/mac-install-python.sh": "b8c1bda7ee811c6a32695d195265ff15dc3df9aa232bbd6084b85e41a78a4d9c",
       "scripts/mac-python.sh": "32edc0ced4d675c49c4d7a5abcf82bed0798a90028be1a3d55563960e9af1fa3",
-      "scripts/package_app.py": "b9cf14ed8de1b3d11be82f5aa0e2fb21431592c8a420ee8190014957b39216d5",
+      "scripts/package_app.py": "ba8f4eb47d041c6f95dae86bcb07644fcafc2890b13dee910f553991f7514ac0",
       "scripts/review_guide.py": "bd9d36465d8cd0df5f9f28a08560815729e70470a46c7893069785e76434d4d4",
       "secret_store.py": "4c711612f48cb10113dd3308a0f830982b34f615187828a2931810e14f41468e",
-      "server.py": "462005301eb9ce799afebf7f5a99a242cc5cf2619a57f85cb4b69af277b99b54",
+      "server.py": "78fa2a0e77cf37552d99f7afd599f758a4096d32e8531cdc618eb1e6c97d1055",
       "shipping_quotes.py": "4cbc2d7812f6220f974b401640eca1de8b6087268cc04b91efaff1d2452e1656",
       "stock.py": "3dbb8c636029fb9434ad8c72735c09b3ac827aeebbac55d12725752a43990c61",
       "supplier_adapters.py": "848f81f8a5591263e7f859dbc10286228b94a588a534df6538db433c2f928037",
-      "supplier_fetch.py": "4d042e7cf0a95a7f99490f1d6dc2e35331a639e8351c982d997ecf76077232be",
+      "supplier_fetch.py": "3da314f9165194897be4c5ae6ae7edb1b0f94aa11d8d7aabbdfbdbe3c8b33023",
       "supplier_prices.py": "79d16f3fdaa76435273c7cf7c7630b37aa4e32c97364cc49199f994e02593377",
       "supply_hub.py": "6132f0b0b9da4bccfb37a95d1b04c0b4f2552b58265d826e74cc2720e502cc6a",
       "vector_geometry.py": "a41f030d5e01f339f359357a25839bbbc9f86a0c9180da7d5c3adb297a01676a",

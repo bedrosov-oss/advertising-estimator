@@ -41,7 +41,7 @@ import stock
 import full_backup
 import catalog_match
 
-VERSION = "1.0.11"
+VERSION = "1.0.12"
 RESOURCE_ROOT = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
 MAX_BODY_BYTES = 3 * 1024 * 1024
 MAX_CSV_BYTES = 2 * 1024 * 1024

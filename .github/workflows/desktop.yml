@@ -27,7 +27,17 @@ jobs:
       - run: python scripts/check_release.py
       - run: python -B -m unittest discover -s tests -q
       - run: python scripts/build_desktop.py
+      - name: Package and verify macOS download
+        if: runner.os == 'macOS'
+        run: |
+          tar -czf dist-native/AdvertisingEstimator-macOS.tar.gz -C dist-native/darwin AdvertisingEstimator.app self-test.json
+          mkdir -p build-native/download-check
+          tar -xzf dist-native/AdvertisingEstimator-macOS.tar.gz -C build-native/download-check
+          python -c "from pathlib import Path; from scripts.build_desktop import verify_executable; import server; verify_executable(Path('build-native/download-check/AdvertisingEstimator.app/Contents/MacOS/AdvertisingEstimator').resolve(), Path('build-native/download-check/after-download.json'), server.VERSION)"
       - uses: actions/upload-artifact@v4
         with:
           name: AdvertisingEstimator-${{ matrix.os }}
-          path: dist-native/
+          path: |
+            dist-native/*.tar.gz
+            dist-native/win32/
+          if-no-files-found: error
