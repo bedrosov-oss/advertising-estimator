@@ -1,5 +1,5 @@
 {
-  "version": "1.0.10",
+  "version": "1.0.11",
   "updated": "2026-09-15",
   "articles": [
     {
@@ -916,10 +916,14 @@
     },
     {
       "id": "release",
-      "title": "Что нового в 1.0.10",
+      "title": "Что нового в 1.0.11",
       "category": "ОБ ЭТОМ ВЫПУСКЕ",
-      "lead": "Исправлена настройка тарифа Render и уточнён порядок публикации из отдельного репозитория GitHub. Возможности 1.0.9 сохранены.",
+      "lead": "Уточнена переносимость проверок сборки на Windows и macOS: UTF-8 для вывода кириллицы и сравнение физических временных путей. Сохраняются настройка Render и все функции 1.0.10.",
       "steps": [
+        {
+          "title": "Проверки настольной сборки",
+          "text": "GitHub Actions использует UTF-8 для русского вывода Windows. Проверка запуска на Mac учитывает системную ссылку /var → /private/var. Смотрите итог каждого задания отдельно; успешная серверная проверка не означает готовность сборки Windows или Mac."
+        },
         {
           "title": "Размещение на Render",
           "text": "В настройке используется тариф 1c-2g и постоянный диск 1 ГБ. Откройте ссылку Blueprint из docs/WEB_DEPLOYMENT.md, выберите своё пространство и проверьте стоимость перед Apply. Пароль владельца задайте в Render, не в файлах программы."
@@ -949,13 +953,13 @@
         "Номер документа показывается из самого файла инструкции и сравнивается с версией программы.",
         "Обновление текстов — часть работы над новым выпуском; программа не сочиняет инструкцию автоматически."
       ],
-      "keywords": "версия 1.0.10 интернет github render автоподбор доставка"
+      "keywords": "версия 1.0.11 интернет github render автоподбор доставка"
     }
   ],
   "review": {
-    "version": "1.0.10",
-    "note": "Уточнены выпуск 1.0.10, тариф Render 1c-2g, выбор пространства и стоимость диска, порядок публикации из main, секреты и чтение результатов Windows/Mac сборок GitHub Actions. Основной путь интерфейса проверен jsdom с локальным HTTP.",
-    "content_sha256": "cfe72db75d226ee4c565c3c08e9543dbc36cb39dd087e1ba088797ad4090d9e6",
+    "version": "1.0.11",
+    "note": "Инструкция 1.0.11 описывает подтверждённые ошибки настоящих Windows/Mac runners и исправления: UTF-8 в workflow и физический временный путь Mac. Уточнено раздельное чтение результатов сервера, сборки и ручной проверки окна.",
+    "content_sha256": "e6e4fc1dd54d4296ff93630d58bed5c8e8afe81d01162c9730879afca0d4c377",
     "source_sha256": {
       "BUILD_MAC.command": "f56d75c8a82968a67d30f54521a57cb79625b555aabf732370d015083eece714",
       "BUILD_WINDOWS.bat": "84190db3e17f97e32ab582424ca4ab3dee7a0b9390477a2683288c189fde2670",
@@ -993,14 +997,14 @@
       "scripts/install-python.applescript": "2025d135b17c51fb9664a38f7af3637c57ab60115ad00e47e77e19dd83e163c4",
       "scripts/mac-install-python.sh": "b8c1bda7ee811c6a32695d195265ff15dc3df9aa232bbd6084b85e41a78a4d9c",
       "scripts/mac-python.sh": "32edc0ced4d675c49c4d7a5abcf82bed0798a90028be1a3d55563960e9af1fa3",
-      "scripts/package_app.py": "ac99f420649f2ca41bbdc2d901737db47b5c47b653c65a73ffe7a6fbba5639d1",
+      "scripts/package_app.py": "b9cf14ed8de1b3d11be82f5aa0e2fb21431592c8a420ee8190014957b39216d5",
       "scripts/review_guide.py": "bd9d36465d8cd0df5f9f28a08560815729e70470a46c7893069785e76434d4d4",
       "secret_store.py": "4c711612f48cb10113dd3308a0f830982b34f615187828a2931810e14f41468e",
-      "server.py": "cdaca83f177f72aa31efc67eed8be02d69811fee3fbd6f3889c8f37b330e27a6",
+      "server.py": "462005301eb9ce799afebf7f5a99a242cc5cf2619a57f85cb4b69af277b99b54",
       "shipping_quotes.py": "4cbc2d7812f6220f974b401640eca1de8b6087268cc04b91efaff1d2452e1656",
       "stock.py": "3dbb8c636029fb9434ad8c72735c09b3ac827aeebbac55d12725752a43990c61",
       "supplier_adapters.py": "848f81f8a5591263e7f859dbc10286228b94a588a534df6538db433c2f928037",
-      "supplier_fetch.py": "5433efc1a400be77d096099699e768244e967028f5efe9574992daa3fe05d5d2",
+      "supplier_fetch.py": "4d042e7cf0a95a7f99490f1d6dc2e35331a639e8351c982d997ecf76077232be",
       "supplier_prices.py": "79d16f3fdaa76435273c7cf7c7630b37aa4e32c97364cc49199f994e02593377",
       "supply_hub.py": "6132f0b0b9da4bccfb37a95d1b04c0b4f2552b58265d826e74cc2720e502cc6a",
       "vector_geometry.py": "a41f030d5e01f339f359357a25839bbbc9f86a0c9180da7d5c3adb297a01676a",

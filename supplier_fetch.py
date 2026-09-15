@@ -20,7 +20,7 @@ import urllib.parse
 MAX_BYTES = 8 * 1024 * 1024
 TIMEOUT = 20
 MAX_REDIRECTS = 3
-USER_AGENT = 'AdvertisingEstimator/1.0.10'
+USER_AGENT = 'AdvertisingEstimator/1.0.11'
 
 
 def _remaining(deadline):

@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
     tags: ['v*']
+env:
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: utf-8
 permissions:
   contents: read
 jobs:

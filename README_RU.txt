@@ -1,4 +1,4 @@
-СМЕТЧИК РЕКЛАМЫ И ПОЛИГРАФИИ — 1.0.10
+СМЕТЧИК РЕКЛАМЫ И ПОЛИГРАФИИ — 1.0.11
 
 БЫСТРЫЙ ЗАПУСК
 Mac: полностью распакуйте архив, запустите SETUP_FEATURES.command,
@@ -42,7 +42,7 @@ Word и Excel с формулами находятся в «Документах
 Данные на Windows: %LOCALAPPDATA%/AdvertisingEstimator/
 Программа не обращается к памяти ChatGPT.
 
-Отчёт проверки: docs/VERIFICATION_1.0.10.md.
+Отчёт проверки: docs/VERIFICATION_1.0.11.md.
 Основные разделы: docs/NEW_FEATURES.md.
 DaData и ФНС: docs/CUSTOMER_LOOKUP.md. Tavily: docs/tavily.md.
 Автоматическая подготовка Python: docs/AUTO_PYTHON.md.

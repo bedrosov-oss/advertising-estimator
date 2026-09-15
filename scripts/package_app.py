@@ -51,7 +51,7 @@ def package():
     with (DEST/'Contents/Info.plist').open('wb') as stream:
         plistlib.dump({'CFBundleName':'Сметчик','CFBundleDisplayName':'Сметчик рекламы',
           'CFBundleIdentifier':'local.advertising.estimator.launcher','CFBundleExecutable':'AdvertisingEstimator',
-          'CFBundlePackageType':'APPL','CFBundleVersion':'1.0.10','CFBundleShortVersionString':'1.0.10',
+          'CFBundlePackageType':'APPL','CFBundleVersion':'1.0.11','CFBundleShortVersionString':'1.0.11',
           'LSMinimumSystemVersion':'10.13','LSUIElement':False,'NSHighResolutionCapable':True},stream)
     print(DEST)
 

@@ -19,7 +19,7 @@ class MacLauncherTests(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory(prefix='mac-estimator-launcher-')
         self.addCleanup(self.temporary.cleanup)
-        self.base = Path(self.temporary.name)
+        self.base = Path(self.temporary.name).resolve()
         self.app = self.base / 'Сметчик рекламы с пробелами'
         self.app.mkdir()
         for name in ('START_MAC.command', 'BUILD_MAC.command', 'scripts/mac-python.sh',
