@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "project": {
+    "title": "УЧЕБНЫЙ ПРИМЕР: 20 табличек ПВХ 600 × 400 мм",
+    "client": "",
+    "city": "",
+    "quantity": "20",
+    "notes": "Данные наблюдались 11.09.2026 и требуют проверки для нового заказа. Готовые макеты; односторонняя печать CMYK. Регулярная сетка 3 × 7, край 25 мм, промежуток 10 мм, без печатных вылетов; это допущение, не утверждённая карта раскроя. Наценка 30% только для демонстрации. Не уточнены упаковка, перевозки, монтаж, налоговые условия и технологические расходы."
+  },
+  "rows": [
+    {
+      "id": "demo-pvc",
+      "name": "ПВХ UNEXT-Strong 3 мм, целый лист 2030 × 3050 мм",
+      "category": "material",
+      "unit": "лист",
+      "quantity": "1",
+      "price": "5130.00",
+      "increment": "1",
+      "minimum_charge": "0",
+      "source": "Q01 / S01: https://zenonline.ru/cat/00000097247",
+      "price_date": "2026-09-11",
+      "confirmed": false,
+      "note": "Учебно закупаем целый лист. НДС, филиал и наличие не подтверждены. Дата отражает чтение страницы.",
+      "source_status": "published_snapshot"
+    },
+    {
+      "id": "demo-print",
+      "name": "УФ-печать CMYK, условный сценарий начисляемых 6 м²",
+      "category": "work",
+      "unit": "м²",
+      "quantity": "6",
+      "price": "750.00",
+      "increment": "",
+      "minimum_charge": "5000",
+      "source": "Q08 / S07: https://uvprint.ru/prices-and-terms/",
+      "price_date": "2026-09-11",
+      "confirmed": false,
+      "note": "C02: минимум 0,3 м² на деталь и 5000 руб. за печатный заказ. Если тариф выбирают по фактическим 4,8 м², применяется Q07: 1100 руб./м², сумма 6600 руб. Порядок выбора ступени уточнить. Материал отдельно.",
+      "source_status": "scope_needs_confirmation"
+    },
+    {
+      "id": "demo-cut",
+      "name": "Фрезерная резка ПВХ 1–3 мм по периметрам",
+      "category": "work",
+      "unit": "пог. м",
+      "quantity": "40",
+      "price": "50.00",
+      "increment": "",
+      "minimum_charge": "0",
+      "source": "Q13 / S07: https://uvprint.ru/prices-and-terms/",
+      "price_date": "2026-09-11",
+      "confirmed": false,
+      "note": "20 × 2 × (0,6 + 0,4) = 40 м. Допущение: оплачиваются только указанные контуры, без дополнительных врезок. Уточнить полный состав резки.",
+      "source_status": "published_snapshot"
+    },
+    {
+      "id": "demo-pack",
+      "name": "Упаковка: состав и тариф уточнить",
+      "category": "service",
+      "unit": "заказ",
+      "quantity": "1",
+      "price": "",
+      "increment": "",
+      "minimum_charge": "0",
+      "source": "",
+      "price_date": "",
+      "confirmed": false,
+      "note": "Неизвестная стоимость; пустое значение сохраняется как неизвестное.",
+      "source_status": "manual"
+    },
+    {
+      "id": "demo-delivery",
+      "name": "Перевозки до подрядчика и доставка: маршрут уточнить",
+      "category": "delivery",
+      "unit": "заказ",
+      "quantity": "1",
+      "price": "",
+      "increment": "",
+      "minimum_charge": "0",
+      "source": "",
+      "price_date": "",
+      "confirmed": false,
+      "note": "Общий маршрут, упаковочные габариты и стоимость не установлены. Не считать перевозки включёнными.",
+      "source_status": "manual"
+    },
+    {
+      "id": "demo-mount",
+      "name": "Монтаж: необходимость, объём и цена уточняются",
+      "category": "work",
+      "unit": "заказ",
+      "quantity": "",
+      "price": "",
+      "increment": "",
+      "minimum_charge": "0",
+      "source": "",
+      "price_date": "",
+      "confirmed": false,
+      "note": "Если монтаж исключён заказчиком, удалить строку и явно записать исключение в примечаниях. Если нужен, заполнить объём и тариф.",
+      "source_status": "manual"
+    }
+  ],
+  "settings": {
+    "overhead_percent": "0",
+    "reserve_percent": "0",
+    "pricing_mode": "markup",
+    "profit_percent": "30",
+    "discount_percent": "0",
+    "tax_mode": "unknown",
+    "tax_percent": "",
+    "cost_basis_confirmed": false,
+    "scope_confirmed": false
+  }
+}

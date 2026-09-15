@@ -1,0 +1,199 @@
+[
+  {
+    "id": "O01",
+    "name": "Предпечатная подготовка",
+    "billing_unit": "заказ / час",
+    "cost_type": "разовая",
+    "quantity_basis": "Согласованные часы × ставка; учесть минимальную оплату.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O02",
+    "name": "Цветопроба и тест материала",
+    "billing_unit": "проба",
+    "cost_type": "разовая",
+    "quantity_basis": "Число согласованных проб × тариф.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O03",
+    "name": "УФ-печать по листовым материалам",
+    "billing_unit": "м²",
+    "cost_type": "переменная с минимумом",
+    "quantity_basis": "Площадь по правилам подрядчика × ступень тарифа; применить минимум заказа.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O04",
+    "name": "Рулонная печать",
+    "billing_unit": "м² / пог. м",
+    "cost_type": "переменная с минимумом",
+    "quantity_basis": "Раскладка по полезной ширине, длина подачи и правило оплаты.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O05",
+    "name": "Цифровая листовая печать",
+    "billing_unit": "печатный лист / сторона",
+    "cost_type": "переменная с приладкой",
+    "quantity_basis": "Количество печатных листов × число оплачиваемых сторон; материал и клик проверить на включение.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard",
+    "source_ids": [
+      "S19"
+    ]
+  },
+  {
+    "id": "O06",
+    "name": "Офсетная печать",
+    "billing_unit": "приладка / прогон",
+    "cost_type": "разовая и переменная",
+    "quantity_basis": "Формы, приладка, прогон и бумага по расшифровке исполнителя.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard",
+    "source_ids": [
+      "S19"
+    ]
+  },
+  {
+    "id": "O07",
+    "name": "Прямоугольный раскрой",
+    "billing_unit": "рез / пог. м / лист",
+    "cost_type": "по тарифу",
+    "quantity_basis": "Выбранный маршрут резки; не суммировать разные способы оплаты.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O08",
+    "name": "Фрезерная резка",
+    "billing_unit": "пог. м",
+    "cost_type": "переменная с минимумом",
+    "quantity_basis": "Длина контуров с согласованными врезками и проходами; общие резы учитывать один раз.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard",
+    "source_ids": [
+      "S26"
+    ]
+  },
+  {
+    "id": "O09",
+    "name": "Плоттерная резка",
+    "billing_unit": "м² / пог. м",
+    "cost_type": "по тарифу",
+    "quantity_basis": "Единица из прайса; площадь не заменяет длину сложного контура без согласования.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O10",
+    "name": "Выборка и перенос аппликации",
+    "billing_unit": "м² / час",
+    "cost_type": "переменная",
+    "quantity_basis": "Согласовать сложность и включение монтажного материала.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O11",
+    "name": "Ламинация",
+    "billing_unit": "м² / лист",
+    "cost_type": "переменная с минимумом",
+    "quantity_basis": "Площадь и число сторон; проверить включение плёнки.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O12",
+    "name": "Накатка плёнки на основу",
+    "billing_unit": "м²",
+    "cost_type": "переменная",
+    "quantity_basis": "Площадь поверхности; печать и основа могут оплачиваться отдельно.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O13",
+    "name": "Подворот, сварка и карманы баннера",
+    "billing_unit": "пог. м",
+    "cost_type": "переменная",
+    "quantity_basis": "Длина обработанных кромок; припуски учесть в материале.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O14",
+    "name": "Люверсы и отверстия",
+    "billing_unit": "шт",
+    "cost_type": "переменная",
+    "quantity_basis": "Количество по схеме; углы не считать дважды.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O15",
+    "name": "Биговка и фальцовка",
+    "billing_unit": "линия / лист",
+    "cost_type": "переменная с приладкой",
+    "quantity_basis": "Число линий и листов, направление волокна, приладка.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O16",
+    "name": "Брошюровка и переплёт",
+    "billing_unit": "экземпляр",
+    "cost_type": "переменная с приладкой",
+    "quantity_basis": "Технология скрепления, объём блока, обложка и приладка.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O17",
+    "name": "Каркас и сварка",
+    "billing_unit": "узел / час",
+    "cost_type": "по заданию",
+    "quantity_basis": "Ведомость металла, трудоёмкость, подготовка и покрытие.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O18",
+    "name": "Сборка подсветки",
+    "billing_unit": "модуль / час",
+    "cost_type": "по заданию",
+    "quantity_basis": "Схема, модули, источники питания, проводка и проверка.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard",
+    "source_ids": [
+      "S27",
+      "S28",
+      "S29"
+    ]
+  },
+  {
+    "id": "O19",
+    "name": "Монтаж и демонтаж",
+    "billing_unit": "выезд / час / смена",
+    "cost_type": "разовая и переменная",
+    "quantity_basis": "Высота, основание, доступ, техника, состав бригады и ограничения объекта.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard"
+  },
+  {
+    "id": "O20",
+    "name": "Упаковка и логистика",
+    "billing_unit": "место / рейс",
+    "cost_type": "разовая и переменная",
+    "quantity_basis": "Размер и масса грузовых мест, маршрут, погрузка; общую доставку не дублировать.",
+    "rate": null,
+    "origin": "author_workflow_not_labor_standard",
+    "source_ids": [
+      "S30"
+    ]
+  }
+]

@@ -1,0 +1,2325 @@
+[
+  {
+    "id": "Q01",
+    "name": "ПВХ UNEXT-Strong белый 3 мм",
+    "supplier": "ЗЕНОН",
+    "source_id": "S01",
+    "material_id": "M01",
+    "price_minor": 513000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "лист",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C01"
+    ],
+    "parameters": {
+      "sku": "00000097247",
+      "width_mm": 2030,
+      "length_mm": 3050,
+      "thickness_mm": 3,
+      "color": "white"
+    },
+    "quantity_tier": null,
+    "minimum_quantity": null,
+    "purchase_increment": "0.5",
+    "includes": [],
+    "note": "Минимальная кратность не доказывает форму поставляемого полулиста."
+  },
+  {
+    "id": "Q02",
+    "name": "GRAFIX 502М чёрная матовая",
+    "supplier": "ЗЕНОН",
+    "source_id": "S02",
+    "material_id": "M07",
+    "price_minor": 58000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C01"
+    ],
+    "parameters": {
+      "sku": "00000012935",
+      "width_mm": 1220,
+      "roll_length_m": 50
+    },
+    "quantity_tier": null,
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": ""
+  },
+  {
+    "id": "Q03",
+    "name": "Infinilite BASIC 2b: карточка",
+    "supplier": "ЗЕНОН",
+    "source_id": "S03",
+    "material_id": "M17",
+    "price_minor": 1765,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "шт",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "conflict",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C01",
+      "C06"
+    ],
+    "parameters": {
+      "sku": "00000010709",
+      "voltage_v": 12,
+      "power_w": "0.95",
+      "ip": "IP65"
+    },
+    "quantity_tier": null,
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": ""
+  },
+  {
+    "id": "Q04",
+    "name": "Infinilite J Slim: карточка",
+    "supplier": "ЗЕНОН",
+    "source_id": "S04",
+    "material_id": "M18",
+    "price_minor": 177900,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "шт",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "conflict",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C01",
+      "C07"
+    ],
+    "parameters": {
+      "sku": "00000063947",
+      "voltage_v": 12,
+      "power_w": 150,
+      "current_a": "12.5",
+      "ip": "IP67"
+    },
+    "quantity_tier": null,
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": ""
+  },
+  {
+    "id": "Q05",
+    "name": "Infinilite BASIC 2b: главная",
+    "supplier": "ЗЕНОН",
+    "source_id": "S05",
+    "material_id": "M17",
+    "price_minor": 1909,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "шт",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "conflict",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C01",
+      "C06"
+    ],
+    "parameters": {
+      "sku": "00000010709"
+    },
+    "quantity_tier": null,
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Только наблюдение конфликта, не подтверждение цены по карточке."
+  },
+  {
+    "id": "Q06",
+    "name": "Infinilite J Slim: главная",
+    "supplier": "ЗЕНОН",
+    "source_id": "S05",
+    "material_id": "M18",
+    "price_minor": 192500,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "шт",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "conflict",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C01",
+      "C07"
+    ],
+    "parameters": {
+      "sku": "00000063947"
+    },
+    "quantity_tier": null,
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Только наблюдение конфликта."
+  },
+  {
+    "id": "Q07",
+    "name": "УФ-печать ПВХ, CMYK",
+    "supplier": "UVprint",
+    "source_id": "S07",
+    "material_id": "M01",
+    "price_minor": 110000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C02"
+    ],
+    "parameters": {
+      "mode": "CMYK"
+    },
+    "quantity_tier": {
+      "label": "менее 5 м²",
+      "min": null,
+      "max": "5",
+      "max_inclusive": false
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "print_only"
+    ],
+    "note": "Материал отдельно; связанный источник состава S06."
+  },
+  {
+    "id": "Q08",
+    "name": "УФ-печать ПВХ, CMYK",
+    "supplier": "UVprint",
+    "source_id": "S07",
+    "material_id": "M01",
+    "price_minor": 75000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C02"
+    ],
+    "parameters": {
+      "mode": "CMYK"
+    },
+    "quantity_tier": {
+      "label": "5–50 м²",
+      "min": "5",
+      "max": "50",
+      "min_inclusive": true,
+      "max_inclusive": true
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "print_only"
+    ],
+    "note": "Материал отдельно; связанный источник состава S06."
+  },
+  {
+    "id": "Q09",
+    "name": "УФ-печать ПВХ, CMYK",
+    "supplier": "UVprint",
+    "source_id": "S07",
+    "material_id": "M01",
+    "price_minor": 55000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C02"
+    ],
+    "parameters": {
+      "mode": "CMYK"
+    },
+    "quantity_tier": {
+      "label": "более 50 м²",
+      "min": "50",
+      "max": null,
+      "min_inclusive": false
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "print_only"
+    ],
+    "note": "Материал отдельно; связанный источник состава S06."
+  },
+  {
+    "id": "Q10",
+    "name": "УФ-печать ПВХ, CMYK + белый",
+    "supplier": "UVprint",
+    "source_id": "S07",
+    "material_id": "M01",
+    "price_minor": 150000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C02"
+    ],
+    "parameters": {
+      "mode": "CMYK + белый"
+    },
+    "quantity_tier": {
+      "label": "менее 5 м²",
+      "min": null,
+      "max": "5",
+      "max_inclusive": false
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "print_only"
+    ],
+    "note": "Материал отдельно; связанный источник состава S06."
+  },
+  {
+    "id": "Q11",
+    "name": "УФ-печать ПВХ, CMYK + белый",
+    "supplier": "UVprint",
+    "source_id": "S07",
+    "material_id": "M01",
+    "price_minor": 95000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C02"
+    ],
+    "parameters": {
+      "mode": "CMYK + белый"
+    },
+    "quantity_tier": {
+      "label": "5–50 м²",
+      "min": "5",
+      "max": "50",
+      "min_inclusive": true,
+      "max_inclusive": true
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "print_only"
+    ],
+    "note": "Материал отдельно; связанный источник состава S06."
+  },
+  {
+    "id": "Q12",
+    "name": "УФ-печать ПВХ, CMYK + белый",
+    "supplier": "UVprint",
+    "source_id": "S07",
+    "material_id": "M01",
+    "price_minor": 75000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C02"
+    ],
+    "parameters": {
+      "mode": "CMYK + белый"
+    },
+    "quantity_tier": {
+      "label": "более 50 м²",
+      "min": "50",
+      "max": null,
+      "min_inclusive": false
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "print_only"
+    ],
+    "note": "Материал отдельно; связанный источник состава S06."
+  },
+  {
+    "id": "Q13",
+    "name": "Фрезерная резка ПВХ 1–3 мм",
+    "supplier": "UVprint",
+    "source_id": "S07",
+    "material_id": "M01",
+    "price_minor": 5000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C03"
+    ],
+    "parameters": {
+      "thickness_min_mm": 1,
+      "thickness_max_mm": 3
+    },
+    "quantity_tier": {
+      "label": "менее 100 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "cut"
+    ],
+    "note": ""
+  },
+  {
+    "id": "Q14",
+    "name": "Фрезерная резка ПВХ 1–3 мм",
+    "supplier": "UVprint",
+    "source_id": "S07",
+    "material_id": "M01",
+    "price_minor": 4000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C03"
+    ],
+    "parameters": {
+      "thickness_min_mm": 1,
+      "thickness_max_mm": 3
+    },
+    "quantity_tier": {
+      "label": "100–500 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "cut"
+    ],
+    "note": ""
+  },
+  {
+    "id": "Q15",
+    "name": "Фрезерная резка ПВХ 1–3 мм",
+    "supplier": "UVprint",
+    "source_id": "S07",
+    "material_id": "M01",
+    "price_minor": 3000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C03"
+    ],
+    "parameters": {
+      "thickness_min_mm": 1,
+      "thickness_max_mm": 3
+    },
+    "quantity_tier": {
+      "label": "более 500 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "cut"
+    ],
+    "note": ""
+  },
+  {
+    "id": "Q16",
+    "name": "ПВХ 3 мм с печатью 4+0",
+    "supplier": "PRINT100",
+    "source_id": "S08",
+    "material_id": "M01",
+    "price_minor": 390000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "bundle",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C04"
+    ],
+    "parameters": {
+      "thickness_mm": 3,
+      "max_width_mm": 2020,
+      "max_length_mm": 3020,
+      "brand": null
+    },
+    "quantity_tier": {
+      "label": "малый тираж до 20 м²"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "material",
+      "print_4_0",
+      "simple_cut",
+      "stretch_packaging"
+    ],
+    "note": ""
+  },
+  {
+    "id": "Q17",
+    "name": "ПВХ 5 мм с печатью 4+0",
+    "supplier": "PRINT100",
+    "source_id": "S08",
+    "material_id": "M01",
+    "price_minor": 490000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "bundle",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C04"
+    ],
+    "parameters": {
+      "thickness_mm": 5,
+      "max_width_mm": 2020,
+      "max_length_mm": 3020,
+      "brand": null
+    },
+    "quantity_tier": {
+      "label": "малый тираж до 20 м²"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "material",
+      "print_4_0",
+      "simple_cut",
+      "stretch_packaging"
+    ],
+    "note": ""
+  },
+  {
+    "id": "Q18",
+    "name": "Белая плёнка: печать",
+    "supplier": "PRINT100",
+    "source_id": "S09",
+    "material_id": "M06",
+    "price_minor": 110000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "bundle",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C05"
+    ],
+    "parameters": {},
+    "quantity_tier": {
+      "label": "малые тиражи; для обработки условия уточнить"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Включение материала и обработки подтвердить по конкретному заказу; цену от не считать фиксированной."
+  },
+  {
+    "id": "Q19",
+    "name": "Прозрачная плёнка без белил",
+    "supplier": "PRINT100",
+    "source_id": "S09",
+    "material_id": "M06",
+    "price_minor": 110000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "bundle",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C05"
+    ],
+    "parameters": {},
+    "quantity_tier": {
+      "label": "малые тиражи; для обработки условия уточнить"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Включение материала и обработки подтвердить по конкретному заказу; цену от не считать фиксированной."
+  },
+  {
+    "id": "Q20",
+    "name": "Прозрачная плёнка с белилами",
+    "supplier": "PRINT100",
+    "source_id": "S09",
+    "material_id": "M06",
+    "price_minor": 190000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "bundle",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C05"
+    ],
+    "parameters": {},
+    "quantity_tier": {
+      "label": "малые тиражи; для обработки условия уточнить"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Включение материала и обработки подтвердить по конкретному заказу; цену от не считать фиксированной."
+  },
+  {
+    "id": "Q21",
+    "name": "Бэклит: печать",
+    "supplier": "PRINT100",
+    "source_id": "S09",
+    "material_id": "M12",
+    "price_minor": 180000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "bundle",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C05"
+    ],
+    "parameters": {},
+    "quantity_tier": {
+      "label": "малые тиражи; для обработки условия уточнить"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Включение материала и обработки подтвердить по конкретному заказу; цену от не считать фиксированной."
+  },
+  {
+    "id": "Q22",
+    "name": "Баннер 440 г/м²: печать",
+    "supplier": "PRINT100",
+    "source_id": "S09",
+    "material_id": "M10",
+    "price_minor": 110000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "bundle",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C05"
+    ],
+    "parameters": {},
+    "quantity_tier": {
+      "label": "малые тиражи; для обработки условия уточнить"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Включение материала и обработки подтвердить по конкретному заказу; цену от не считать фиксированной."
+  },
+  {
+    "id": "Q23",
+    "name": "Ламинация",
+    "supplier": "PRINT100",
+    "source_id": "S09",
+    "material_id": "M08",
+    "price_minor": 60000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C05"
+    ],
+    "parameters": {},
+    "quantity_tier": {
+      "label": "малые тиражи; для обработки условия уточнить"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Включение материала и обработки подтвердить по конкретному заказу; цену от не считать фиксированной."
+  },
+  {
+    "id": "Q24",
+    "name": "Плоттерная резка",
+    "supplier": "PRINT100",
+    "source_id": "S09",
+    "material_id": "M06",
+    "price_minor": 90000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C05"
+    ],
+    "parameters": {},
+    "quantity_tier": {
+      "label": "малые тиражи; для обработки условия уточнить"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Включение материала и обработки подтвердить по конкретному заказу; цену от не считать фиксированной."
+  },
+  {
+    "id": "Q25",
+    "name": "Нанесение на монтажный материал",
+    "supplier": "PRINT100",
+    "source_id": "S09",
+    "material_id": "M09",
+    "price_minor": 50000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "service",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C05"
+    ],
+    "parameters": {},
+    "quantity_tier": {
+      "label": "малые тиражи; для обработки условия уточнить"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Включение материала и обработки подтвердить по конкретному заказу; цену от не считать фиксированной."
+  },
+  {
+    "id": "Q26",
+    "name": "Рулонная печать: цена от",
+    "supplier": "PRINT100",
+    "source_id": "S09",
+    "material_id": "M06",
+    "price_minor": 35000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "м²",
+    "price_kind": "from",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "from_price",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C05"
+    ],
+    "parameters": {},
+    "quantity_tier": {
+      "label": "объём и состав уточнить"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Включение материала и обработки подтвердить по конкретному заказу; цену от не считать фиксированной."
+  },
+  {
+    "id": "Q27",
+    "name": "CARTBLANK DIGI А4, 120 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 61200,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А4",
+      "grammage_g_m2": 120,
+      "sheets_per_pack": 330,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "до 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q28",
+    "name": "CARTBLANK DIGI А4, 120 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 51800,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А4",
+      "grammage_g_m2": 120,
+      "sheets_per_pack": 330,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "от 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q29",
+    "name": "CARTBLANK DIGI А3, 120 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 122400,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А3",
+      "grammage_g_m2": 120,
+      "sheets_per_pack": 330,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "до 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q30",
+    "name": "CARTBLANK DIGI А3, 120 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 103600,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А3",
+      "grammage_g_m2": 120,
+      "sheets_per_pack": 330,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "от 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q31",
+    "name": "CARTBLANK DIGI А4, 160 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 62000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А4",
+      "grammage_g_m2": 160,
+      "sheets_per_pack": 250,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "до 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q32",
+    "name": "CARTBLANK DIGI А4, 160 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 51800,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А4",
+      "grammage_g_m2": 160,
+      "sheets_per_pack": 250,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "от 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q33",
+    "name": "CARTBLANK DIGI А3, 160 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 124000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А3",
+      "grammage_g_m2": 160,
+      "sheets_per_pack": 250,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "до 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q34",
+    "name": "CARTBLANK DIGI А3, 160 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 103700,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А3",
+      "grammage_g_m2": 160,
+      "sheets_per_pack": 250,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "от 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q35",
+    "name": "CARTBLANK DIGI А3, 200 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 124000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А3",
+      "grammage_g_m2": 200,
+      "sheets_per_pack": 200,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "до 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q36",
+    "name": "CARTBLANK DIGI А3, 200 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 103700,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-01-19",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C08"
+    ],
+    "parameters": {
+      "format": "А3",
+      "grammage_g_m2": 200,
+      "sheets_per_pack": 200,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "от 10 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 3, CARTBLANK DIGI",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q37",
+    "name": "ИЛИМ СТАНДАРТ А4, 80 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 41700,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-04-17",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C09"
+    ],
+    "parameters": {
+      "format": "А4",
+      "grammage_g_m2": 80,
+      "sheets_per_pack": 500,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "до 100 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 6, ИЛИМ СТАНДАРТ",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q38",
+    "name": "ИЛИМ СТАНДАРТ А4, 80 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 39700,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-04-17",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C09"
+    ],
+    "parameters": {
+      "format": "А4",
+      "grammage_g_m2": 80,
+      "sheets_per_pack": 500,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "от 100 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 6, ИЛИМ СТАНДАРТ",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q39",
+    "name": "ИЛИМ СТАНДАРТ А3, 80 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 83400,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-04-17",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C09"
+    ],
+    "parameters": {
+      "format": "А3",
+      "grammage_g_m2": 80,
+      "sheets_per_pack": 500,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "до 100 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 6, ИЛИМ СТАНДАРТ",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q40",
+    "name": "ИЛИМ СТАНДАРТ А3, 80 г/м²",
+    "supplier": "Дубль В",
+    "source_id": "S16",
+    "material_id": "M23",
+    "price_minor": 79400,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пачка",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": "2026-04-17",
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C09"
+    ],
+    "parameters": {
+      "format": "А3",
+      "grammage_g_m2": 80,
+      "sheets_per_pack": 500,
+      "color": "белый"
+    },
+    "quantity_tier": {
+      "label": "от 100 пачек"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": "1",
+    "includes": [],
+    "note": "",
+    "page_or_cells": "Физическая страница 6, ИЛИМ СТАНДАРТ",
+    "source_document_updated_on": "2026-08-27"
+  },
+  {
+    "id": "Q41",
+    "name": "Листовки А5, 4+0, 500 шт",
+    "supplier": "ФС Принт",
+    "source_id": "S19",
+    "material_id": "M24",
+    "price_minor": 199160,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "тираж",
+    "price_kind": "finished_product",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C10"
+    ],
+    "parameters": {
+      "width_mm": 148,
+      "height_mm": 210,
+      "quantity": 500,
+      "colors": "4+0",
+      "grammage_g_m2": 115,
+      "paper_brand": null,
+      "paper_finish": null,
+      "technology": null
+    },
+    "quantity_tier": {
+      "label": "ровно 500 шт"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "изготовление тиража с указанной цветностью"
+    ],
+    "note": "Цена за весь тираж. Состав услуги уточнить до добавления отдельных материалов и работ."
+  },
+  {
+    "id": "Q42",
+    "name": "Листовки А5, 4+0, 1000 шт",
+    "supplier": "ФС Принт",
+    "source_id": "S19",
+    "material_id": "M24",
+    "price_minor": 272950,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "тираж",
+    "price_kind": "finished_product",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C10"
+    ],
+    "parameters": {
+      "width_mm": 148,
+      "height_mm": 210,
+      "quantity": 1000,
+      "colors": "4+0",
+      "grammage_g_m2": 115,
+      "paper_brand": null,
+      "paper_finish": null,
+      "technology": null
+    },
+    "quantity_tier": {
+      "label": "ровно 1000 шт"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "изготовление тиража с указанной цветностью"
+    ],
+    "note": "Цена за весь тираж. Состав услуги уточнить до добавления отдельных материалов и работ."
+  },
+  {
+    "id": "Q43",
+    "name": "Листовки А5, 4+0, 2000 шт",
+    "supplier": "ФС Принт",
+    "source_id": "S19",
+    "material_id": "M24",
+    "price_minor": 416790,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "тираж",
+    "price_kind": "finished_product",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C10"
+    ],
+    "parameters": {
+      "width_mm": 148,
+      "height_mm": 210,
+      "quantity": 2000,
+      "colors": "4+0",
+      "grammage_g_m2": 115,
+      "paper_brand": null,
+      "paper_finish": null,
+      "technology": null
+    },
+    "quantity_tier": {
+      "label": "ровно 2000 шт"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "изготовление тиража с указанной цветностью"
+    ],
+    "note": "Цена за весь тираж. Состав услуги уточнить до добавления отдельных материалов и работ."
+  },
+  {
+    "id": "Q44",
+    "name": "Листовки А5, 4+0, 5000 шт",
+    "supplier": "ФС Принт",
+    "source_id": "S19",
+    "material_id": "M24",
+    "price_minor": 713660,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "тираж",
+    "price_kind": "finished_product",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C10"
+    ],
+    "parameters": {
+      "width_mm": 148,
+      "height_mm": 210,
+      "quantity": 5000,
+      "colors": "4+0",
+      "grammage_g_m2": 115,
+      "paper_brand": null,
+      "paper_finish": null,
+      "technology": null
+    },
+    "quantity_tier": {
+      "label": "ровно 5000 шт"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "изготовление тиража с указанной цветностью"
+    ],
+    "note": "Цена за весь тираж. Состав услуги уточнить до добавления отдельных материалов и работ."
+  },
+  {
+    "id": "Q45",
+    "name": "Листовки А5, 4+4, 500 шт",
+    "supplier": "ФС Принт",
+    "source_id": "S19",
+    "material_id": "M24",
+    "price_minor": 333000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "тираж",
+    "price_kind": "finished_product",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C10"
+    ],
+    "parameters": {
+      "width_mm": 148,
+      "height_mm": 210,
+      "quantity": 500,
+      "colors": "4+4",
+      "grammage_g_m2": 115,
+      "paper_brand": null,
+      "paper_finish": null,
+      "technology": null
+    },
+    "quantity_tier": {
+      "label": "ровно 500 шт"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "изготовление тиража с указанной цветностью"
+    ],
+    "note": "Цена за весь тираж. Состав услуги уточнить до добавления отдельных материалов и работ."
+  },
+  {
+    "id": "Q46",
+    "name": "Листовки А5, 4+4, 1000 шт",
+    "supplier": "ФС Принт",
+    "source_id": "S19",
+    "material_id": "M24",
+    "price_minor": 463670,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "тираж",
+    "price_kind": "finished_product",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C10"
+    ],
+    "parameters": {
+      "width_mm": 148,
+      "height_mm": 210,
+      "quantity": 1000,
+      "colors": "4+4",
+      "grammage_g_m2": 115,
+      "paper_brand": null,
+      "paper_finish": null,
+      "technology": null
+    },
+    "quantity_tier": {
+      "label": "ровно 1000 шт"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "изготовление тиража с указанной цветностью"
+    ],
+    "note": "Цена за весь тираж. Состав услуги уточнить до добавления отдельных материалов и работ."
+  },
+  {
+    "id": "Q47",
+    "name": "Листовки А5, 4+4, 2000 шт",
+    "supplier": "ФС Принт",
+    "source_id": "S19",
+    "material_id": "M24",
+    "price_minor": 573840,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "тираж",
+    "price_kind": "finished_product",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C10"
+    ],
+    "parameters": {
+      "width_mm": 148,
+      "height_mm": 210,
+      "quantity": 2000,
+      "colors": "4+4",
+      "grammage_g_m2": 115,
+      "paper_brand": null,
+      "paper_finish": null,
+      "technology": null
+    },
+    "quantity_tier": {
+      "label": "ровно 2000 шт"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "изготовление тиража с указанной цветностью"
+    ],
+    "note": "Цена за весь тираж. Состав услуги уточнить до добавления отдельных материалов и работ."
+  },
+  {
+    "id": "Q48",
+    "name": "Листовки А5, 4+4, 5000 шт",
+    "supplier": "ФС Принт",
+    "source_id": "S19",
+    "material_id": "M24",
+    "price_minor": 822800,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "тираж",
+    "price_kind": "finished_product",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C10"
+    ],
+    "parameters": {
+      "width_mm": 148,
+      "height_mm": 210,
+      "quantity": 5000,
+      "colors": "4+4",
+      "grammage_g_m2": 115,
+      "paper_brand": null,
+      "paper_finish": null,
+      "technology": null
+    },
+    "quantity_tier": {
+      "label": "ровно 5000 шт"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "изготовление тиража с указанной цветностью"
+    ],
+    "note": "Цена за весь тираж. Состав услуги уточнить до добавления отдельных материалов и работ."
+  },
+  {
+    "id": "Q49",
+    "name": "Фрезеровка ПВХ, до 3 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 2100,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "до 3 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "до 100 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q50",
+    "name": "Фрезеровка ПВХ, до 3 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 1800,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "до 3 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "100–500 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q51",
+    "name": "Фрезеровка ПВХ, до 3 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 1500,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "до 3 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "500–1000 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q52",
+    "name": "Фрезеровка ПВХ, до 3 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 1300,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "до 3 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "свыше 1000 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q53",
+    "name": "Фрезеровка ПВХ, 4 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 2800,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "4 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "до 100 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q54",
+    "name": "Фрезеровка ПВХ, 4 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 2300,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "4 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "100–500 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q55",
+    "name": "Фрезеровка ПВХ, 4 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 1800,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "4 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "500–1000 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q56",
+    "name": "Фрезеровка ПВХ, 4 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 1650,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "4 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "свыше 1000 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q57",
+    "name": "Фрезеровка ПВХ, 5–6 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 3000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "5–6 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "до 100 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q58",
+    "name": "Фрезеровка ПВХ, 5–6 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 2500,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "5–6 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "100–500 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q59",
+    "name": "Фрезеровка ПВХ, 5–6 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 2100,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "5–6 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "500–1000 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q60",
+    "name": "Фрезеровка ПВХ, 5–6 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 1800,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "5–6 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "свыше 1000 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q61",
+    "name": "Фрезеровка ПВХ, 8–10 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 4000,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "8–10 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "до 100 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q62",
+    "name": "Фрезеровка ПВХ, 8–10 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 3700,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "published_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "8–10 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "100–500 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q63",
+    "name": "Фрезеровка ПВХ, 8–10 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 3500,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "8–10 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "500–1000 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q64",
+    "name": "Фрезеровка ПВХ, 8–10 мм",
+    "supplier": "LiderPOSM",
+    "source_id": "S26",
+    "material_id": "M01",
+    "price_minor": 3300,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "пог. м",
+    "price_kind": "operation",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "scope_needs_confirmation",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C11"
+    ],
+    "parameters": {
+      "thickness_label": "8–10 мм",
+      "operation_id": "O08"
+    },
+    "quantity_tier": {
+      "label": "свыше 1000 пог. м"
+    },
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [
+      "подготовка программы ЧПУ"
+    ],
+    "note": "Применять минимум заказа; от 500 пог. м требуется подтверждение тарифа."
+  },
+  {
+    "id": "Q65",
+    "name": "LS B1 PREMIUM — архив 12.2023",
+    "supplier": "Гельветика+",
+    "source_id": "S25",
+    "material_id": "M17",
+    "price_minor": 1500,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "шт",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "historical_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C12"
+    ],
+    "parameters": {
+      "power_w": "0.5",
+      "ip": "IP65",
+      "chain_quantity": 20
+    },
+    "quantity_tier": null,
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Новая цена не подтверждена; использовать только как историческую запись.",
+    "current_price_usable": false,
+    "source_published_period": "2023-12",
+    "source_updated_on_precision": "month",
+    "page_or_cells": "Физическая страница 1, печатная страница 2"
+  },
+  {
+    "id": "Q66",
+    "name": "LS B2 PREMIUM — архив 12.2023",
+    "supplier": "Гельветика+",
+    "source_id": "S25",
+    "material_id": "M17",
+    "price_minor": 1500,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "шт",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "historical_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C12"
+    ],
+    "parameters": {
+      "power_w": "0.82",
+      "ip": "IP65",
+      "chain_quantity": 20
+    },
+    "quantity_tier": null,
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Новая цена не подтверждена; использовать только как историческую запись.",
+    "current_price_usable": false,
+    "source_published_period": "2023-12",
+    "source_updated_on_precision": "month",
+    "page_or_cells": "Физическая страница 1, печатная страница 2"
+  },
+  {
+    "id": "Q67",
+    "name": "LS A3 — архив 12.2023",
+    "supplier": "Гельветика+",
+    "source_id": "S25",
+    "material_id": "M17",
+    "price_minor": 1800,
+    "currency": "RUB",
+    "minor_units": 2,
+    "unit": "шт",
+    "price_kind": "material",
+    "checked_on": "2026-09-11",
+    "source_updated_on": null,
+    "vat_status": "unknown",
+    "status": "historical_snapshot",
+    "supplier_confirmed": false,
+    "delivery_minor": null,
+    "condition_ids": [
+      "C12"
+    ],
+    "parameters": {
+      "power_w": "1.5",
+      "ip": "IP65",
+      "chain_quantity": 20
+    },
+    "quantity_tier": null,
+    "minimum_quantity": null,
+    "purchase_increment": null,
+    "includes": [],
+    "note": "Новая цена не подтверждена; использовать только как историческую запись.",
+    "current_price_usable": false,
+    "source_published_period": "2023-12",
+    "source_updated_on_precision": "month",
+    "page_or_cells": "Физическая страница 1, печатная страница 2"
+  }
+]

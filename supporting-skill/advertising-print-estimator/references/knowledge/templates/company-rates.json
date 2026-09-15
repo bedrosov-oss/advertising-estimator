@@ -1,0 +1,27 @@
+{
+  "template": true,
+  "company_name": null,
+  "valid_from": null,
+  "currency": "RUB",
+  "labor_hour_cost_minor": null,
+  "operation_rates": [],
+  "equipment_limits": [],
+  "setup_allowance_by_operation": [],
+  "waste_rules": [],
+  "overhead": {
+    "method": null,
+    "rate_fraction": null,
+    "base": null
+  },
+  "pricing": {
+    "method": null,
+    "markup_fraction": null,
+    "target_margin_fraction": null
+  },
+  "tax": {
+    "seller_regime": null,
+    "output_vat_rate": null,
+    "input_vat_accounting": null
+  },
+  "note": "null — не задано. Не применять наценку и целевую маржу одновременно. Ставки согласовать до окончательного расчёта."
+}

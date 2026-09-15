@@ -1,0 +1,313 @@
+[
+  {
+    "id": "W01",
+    "name": "Дубль В",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "condition_ids": [
+      "C08",
+      "C09",
+      "C16"
+    ],
+    "material_ids": [
+      "M13",
+      "M14",
+      "M23"
+    ],
+    "operation_ids": [],
+    "checked_on": "2026-09-11",
+    "auto_refresh": false,
+    "mode": "selected_pdf_price_extracts",
+    "price_ids": [
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40"
+    ],
+    "coverage_note": "14 рублёвых записей бумаги. Валютные разделы и позиции по запросу не стали рублёвыми расценками.",
+    "next_quote_fields": [
+      "марка",
+      "формат",
+      "плотность",
+      "число пачек",
+      "регион",
+      "НДС",
+      "доставка"
+    ]
+  },
+  {
+    "id": "W02",
+    "name": "ФС Принт",
+    "source_ids": [
+      "S18",
+      "S19"
+    ],
+    "condition_ids": [
+      "C10"
+    ],
+    "material_ids": [
+      "M24"
+    ],
+    "operation_ids": [
+      "O05",
+      "O06"
+    ],
+    "checked_on": "2026-09-11",
+    "auto_refresh": false,
+    "mode": "published_print_runs_and_calculator",
+    "price_ids": [
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48"
+    ],
+    "coverage_note": "8 цен готовых тиражей А5; форма калькулятора доступна для следующего расчёта.",
+    "live_calculation_tested": false,
+    "next_quote_fields": [
+      "формат",
+      "тираж",
+      "цветность",
+      "бумага",
+      "отделка",
+      "срок",
+      "состав цены"
+    ]
+  },
+  {
+    "id": "W03",
+    "name": "ФорДА",
+    "source_ids": [
+      "S20",
+      "S21",
+      "S22",
+      "S23"
+    ],
+    "condition_ids": [
+      "C13"
+    ],
+    "material_ids": [
+      "M01"
+    ],
+    "operation_ids": [],
+    "checked_on": "2026-09-11",
+    "auto_refresh": false,
+    "mode": "catalog_and_incomplete_price_labels",
+    "price_ids": [],
+    "coverage_note": "Сохранены категории, две точные карточки и ограничения данных. Подтверждённых численных расценок нет.",
+    "incomplete_price_labels": [
+      {
+        "source_id": "S22",
+        "name": "ПВХ 3 мм, А1",
+        "displayed_amount": "301.60",
+        "qualifier": "от",
+        "currency": null,
+        "unit": "шт",
+        "usable_for_calculation": false
+      },
+      {
+        "source_id": "S23",
+        "name": "ПВХ 3 мм, А3",
+        "displayed_amount": "75.40",
+        "qualifier": "от",
+        "currency": null,
+        "unit": "шт",
+        "usable_for_calculation": false
+      }
+    ],
+    "next_quote_fields": [
+      "марка",
+      "регион",
+      "валюта",
+      "доступный остаток",
+      "фактическая цена",
+      "кратность",
+      "НДС"
+    ]
+  },
+  {
+    "id": "W04",
+    "name": "Гельветика+",
+    "source_ids": [
+      "S24",
+      "S25"
+    ],
+    "condition_ids": [
+      "C12"
+    ],
+    "material_ids": [
+      "M17",
+      "M26"
+    ],
+    "operation_ids": [
+      "O18"
+    ],
+    "checked_on": "2026-09-11",
+    "auto_refresh": false,
+    "mode": "catalog_and_historical_pdf",
+    "price_ids": [
+      "Q65",
+      "Q66",
+      "Q67"
+    ],
+    "coverage_note": "Три архивные цены модулей из PDF 12.2023; требуется новый прайс.",
+    "next_quote_fields": [
+      "актуальный артикул",
+      "дата прайса",
+      "цена",
+      "упаковка",
+      "наличие",
+      "НДС"
+    ]
+  },
+  {
+    "id": "W05",
+    "name": "LiderPOSM",
+    "source_ids": [
+      "S26"
+    ],
+    "condition_ids": [
+      "C11"
+    ],
+    "material_ids": [
+      "M01"
+    ],
+    "operation_ids": [
+      "O08"
+    ],
+    "checked_on": "2026-09-11",
+    "auto_refresh": false,
+    "mode": "milling_price_table",
+    "price_ids": [
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52",
+      "Q53",
+      "Q54",
+      "Q55",
+      "Q56",
+      "Q57",
+      "Q58",
+      "Q59",
+      "Q60",
+      "Q61",
+      "Q62",
+      "Q63",
+      "Q64"
+    ],
+    "coverage_note": "16 тарифных записей: четыре толщины и четыре ступени длины реза.",
+    "next_quote_fields": [
+      "толщина",
+      "суммарная длина реза",
+      "исходные файлы",
+      "диаметр фрезы",
+      "резка по печати",
+      "упаковка"
+    ]
+  },
+  {
+    "id": "W06",
+    "name": "Arlight",
+    "source_ids": [
+      "S27",
+      "S28",
+      "S29"
+    ],
+    "condition_ids": [
+      "C14"
+    ],
+    "material_ids": [
+      "M18",
+      "M25",
+      "M26",
+      "M27"
+    ],
+    "operation_ids": [
+      "O18"
+    ],
+    "checked_on": "2026-09-11",
+    "auto_refresh": false,
+    "mode": "technical_calculator_forms",
+    "price_ids": [],
+    "coverage_note": "Сохранены назначение и прочитанные поля двух калькуляторов. Цены комплектующих и результаты расчётов не получены.",
+    "live_calculation_tested": false,
+    "calculators": [
+      {
+        "source_id": "S28",
+        "name": "Блок питания",
+        "observed_inputs": [
+          "артикул или мощность ленты, Вт/м",
+          "общая длина ленты, м",
+          "до 5 / до 10 / до 20 м на блок"
+        ],
+        "result": null
+      },
+      {
+        "source_id": "S29",
+        "name": "Сечение кабеля",
+        "observed_inputs": [
+          "артикул ленты",
+          "длина ленты, м",
+          "длина кабеля, м",
+          "медь или алюминий"
+        ],
+        "result": null
+      }
+    ]
+  },
+  {
+    "id": "W07",
+    "name": "ПЭК",
+    "source_ids": [
+      "S30"
+    ],
+    "condition_ids": [
+      "C15"
+    ],
+    "material_ids": [
+      "M22"
+    ],
+    "operation_ids": [
+      "O20"
+    ],
+    "checked_on": "2026-09-11",
+    "auto_refresh": false,
+    "mode": "freight_calculator_entry",
+    "price_ids": [],
+    "coverage_note": "Сохранена страница расчёта; тариф перевозки ещё не получен.",
+    "live_calculation_tested": false,
+    "observed_input_groups": [
+      "данные о грузе",
+      "направление",
+      "дополнительные услуги"
+    ],
+    "author_order_checklist": [
+      "откуда и куда",
+      "число мест",
+      "габариты каждого места после упаковки",
+      "вес каждого места",
+      "характер груза",
+      "упаковка",
+      "доставка до адреса",
+      "погрузка и разгрузка"
+    ],
+    "request_template": "templates/freight-request.json"
+  }
+]

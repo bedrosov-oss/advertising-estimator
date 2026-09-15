@@ -1,0 +1,4 @@
+interface:
+  display_name: "Прайсы PDF и Excel"
+  short_description: "Извлечение прайсов и подготовка таблиц сметы"
+  default_prompt: "Примени $advertising-price-files: извлеки предложения из приложенных прайсов, сохрани единицы, условия и ссылки на исходные строки."

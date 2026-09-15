@@ -1,0 +1,27 @@
+{
+  "example": true,
+  "quantity": 20,
+  "width_mm": 600,
+  "height_mm": 400,
+  "sheet_quote_id": "Q01",
+  "print_quote_ids": [
+    "Q07",
+    "Q08"
+  ],
+  "cut_quote_id": "Q13",
+  "layout_assumptions": {
+    "columns": 3,
+    "rows": 7,
+    "edge_mm": 25,
+    "gap_mm": 10,
+    "part_sizes_include_required_allowances": false
+  },
+  "markup_fraction": "0.30",
+  "unpriced": [
+    "packaging",
+    "transport_to_printer",
+    "delivery",
+    "tax_adjustments"
+  ],
+  "note": "Учебная раскладка по габаритам готовых табличек. Печатные вылеты, метки, диаметр фрезы и схема реальной оплаты требуют согласования."
+}

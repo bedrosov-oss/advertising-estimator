@@ -1,0 +1,21 @@
+{
+  "template": true,
+  "order_id": null,
+  "version": null,
+  "status": "preliminary",
+  "currency": "RUB",
+  "specification": [],
+  "assumptions": [],
+  "cost_lines": [],
+  "unpriced_items": [],
+  "direct_cost_minor": null,
+  "overhead_minor": null,
+  "complete_cost_minor": null,
+  "pricing_method": null,
+  "markup_fraction": null,
+  "margin_fraction": null,
+  "price_before_tax_minor": null,
+  "output_tax_minor": null,
+  "client_total_minor": null,
+  "rule": "Не заполнять complete_cost/client_total, если материально значимые статьи или налоговые условия не установлены."
+}

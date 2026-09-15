@@ -1,0 +1,4 @@
+-r requirements-build.txt
+openpyxl==3.1.5
+hypothesis==6.131.9
+pypdf==6.10.0

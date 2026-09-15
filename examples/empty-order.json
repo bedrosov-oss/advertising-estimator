@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "project": {
+    "title": "Новый заказ",
+    "client": "",
+    "city": "",
+    "quantity": "",
+    "notes": ""
+  },
+  "rows": [],
+  "settings": {
+    "overhead_percent": "0",
+    "reserve_percent": "0",
+    "pricing_mode": "markup",
+    "profit_percent": "0",
+    "discount_percent": "0",
+    "tax_mode": "unknown",
+    "tax_percent": "",
+    "cost_basis_confirmed": false,
+    "scope_confirmed": false
+  }
+}

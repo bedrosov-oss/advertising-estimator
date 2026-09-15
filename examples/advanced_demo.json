@@ -1,0 +1,53 @@
+{
+  "project": {
+    "title": "Учебная смета на таблички",
+    "client": "Учебный заказчик",
+    "quantity": "10",
+    "notes": "10 табличек из ПВХ. Учебные цены не являются предложениями поставщиков. Печать и резка указаны отдельно; доставка и монтаж не включены. Для примера выбран режим без начисления НДС."
+  },
+  "rows": [
+    {
+      "id": "1",
+      "name": "ПВХ 3 мм",
+      "unit": "лист",
+      "quantity": "2",
+      "price": "1000",
+      "category": "material",
+      "minimum_charge": "0",
+      "source": "Учебное допущение",
+      "price_date": "2026-09-14",
+      "confirmed": false
+    },
+    {
+      "id": "2",
+      "name": "Печать без материала",
+      "unit": "м²",
+      "quantity": "0.6",
+      "price": "500",
+      "category": "work",
+      "minimum_charge": "0",
+      "source": "Учебное допущение",
+      "price_date": "2026-09-14",
+      "confirmed": false
+    },
+    {
+      "id": "3",
+      "name": "Резка по контуру",
+      "unit": "пог. м",
+      "quantity": "10",
+      "price": "70",
+      "category": "work",
+      "minimum_charge": "0",
+      "source": "Учебное допущение",
+      "price_date": "2026-09-14",
+      "confirmed": false
+    }
+  ],
+  "settings": {
+    "overhead_percent": "10",
+    "reserve_percent": "5",
+    "profit_percent": "20",
+    "discount_percent": "3",
+    "tax_mode": "none"
+  }
+}

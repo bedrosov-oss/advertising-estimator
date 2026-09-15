@@ -1,0 +1,30 @@
+name: Desktop checks and builds
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-14, macos-15-intel, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-lock.txt
+      - run: python -m pip install --require-hashes -r requirements-lock.txt
+      - run: python scripts/check_release.py
+      - run: python -B -m unittest discover -s tests -q
+      - run: python scripts/build_desktop.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AdvertisingEstimator-${{ matrix.os }}
+          path: dist-native/

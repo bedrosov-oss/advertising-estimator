@@ -1,0 +1,4 @@
+# Preserve reviewed source bytes on every OS, regardless of core.autocrlf.
+* text=auto eol=lf
+# Batch files are committed with CRLF and kept byte-for-byte.
+*.bat -text whitespace=cr-at-eol

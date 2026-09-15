@@ -1,0 +1,2 @@
+﻿id;name;category;unit;quantity;price;increment;minimum_charge;source;price_date;confirmed;note;source_status
+template-1;ЗАПОЛНИТЕ: материал или работа;material;лист;;;;0;;;false;"Шаблон без цены; замените на данные своего предложения.";manual

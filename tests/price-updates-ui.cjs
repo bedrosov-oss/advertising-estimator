@@ -1,0 +1,123 @@
+/* Supplier-price UI integration with the real loopback API and a local CSV.
+   Set ESTIMATOR_TEST_URL to a disposable EstimatorServer; no supplier is contacted.
+   Requires jsdom for development. This is not a native macOS or visual UI test. */
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const {randomUUID}=require('node:crypto');
+const {JSDOM,VirtualConsole}=require('jsdom');
+const base=process.env.ESTIMATOR_TEST_URL;
+assert(base,'ESTIMATOR_TEST_URL must point to a disposable local server.');
+assert.equal(new URL(base).hostname,'127.0.0.1');
+const root=path.resolve(__dirname,'..'),errors=[],downloads=[],blobs=new Map(),requests=[];
+const virtualConsole=new VirtualConsole();virtualConsole.on('jsdomError',error=>errors.push(error.message));
+const dom=new JSDOM(fs.readFileSync(path.join(root,'web/index.html'),'utf8'),{url:base,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole});
+const w=dom.window,d=w.document;
+w.fetch=(url,options)=>{
+  const target=new URL(url,base);assert.equal(target.origin,base,'Only the loopback API is permitted.');
+  if(target.pathname==='/api/prices/read')assert(Object.hasOwn(JSON.parse(options.body),'content'),'Supplier reads must use the CSV fixture.');
+  requests.push({path:target.pathname,body:options?.body&&JSON.parse(options.body)});
+  return fetch(target,options);
+};
+w.structuredClone=structuredClone;w.crypto.randomUUID=randomUUID;w.Blob=Blob;
+w.URL.createObjectURL=blob=>{const key='blob:'+randomUUID();blobs.set(key,blob);return key;};
+w.URL.revokeObjectURL=url=>blobs.delete(url);
+w.HTMLAnchorElement.prototype.click=function(){downloads.push({name:this.download,blob:blobs.get(this.href)});};
+w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};w.HTMLDialogElement.prototype.close=function(){this.open=false;};
+w.confirm=()=>true;w.prompt=()=>null;w.addEventListener('error',event=>errors.push(event.message));
+w.eval(['app.js','workspace.js','customer.js','price_updates.js','monitor.js','geometry.js','advanced.js','ergonomic.js','guide.js','supply_hub.js'].map(name=>fs.readFileSync(path.join(root,'web',name),'utf8')).join('\n'));
+const $=id=>d.getElementById(id),el=id=>$('prices-'+id);
+const wait=async(fn,label)=>{const limit=Date.now()+7000;while(Date.now()<limit){if(fn())return;await new Promise(resolve=>setTimeout(resolve,20));}throw Error('Timeout: '+label+' | '+el('status')?.textContent+' | '+$('notice')?.textContent);};
+function input(field,value,event){field.value=value;field.dispatchEvent(new w.Event(event||(field.tagName==='SELECT'?'change':'input'),{bubbles:true}));}
+function check(field,value){field.checked=value;field.dispatchEvent(new w.Event('change',{bubbles:true}));}
+const sourceName='Проверка цен '+randomUUID().slice(0,8),supplier='Поставщик обновления';
+const csv='Наименование;Артикул;Единица;Цена;Валюта\r\nРабота <лист>;SKU-01;лист;125.5;RUB\r\nНовая позиция;SKU-02;лист;300;RUB\r\n';
+const raw=Buffer.from(csv,'utf8');
+function localFile(){Object.defineProperty(el('file'),'files',{configurable:true,value:[{name:'supplier_prices.csv',size:raw.length,arrayBuffer:async()=>Uint8Array.from(raw).buffer}]});el('file').dispatchEvent(new w.Event('change',{bubbles:true}));}
+(async()=>{
+  await wait(()=>!!el('read')&&!!$('own-new')&&!$('internal-report').disabled,'app and price controls initialized');
+  assert.equal(requests.filter(item=>item.path.startsWith('/api/prices/')).length,0,'Initializing must not fetch prices.');
+  const bootstrap=await (await fetch(base+'/api/bootstrap')).json();
+  const api=async(action,body)=>{const response=await fetch(base+'/api/workspace/'+action,{method:'POST',headers:{'Content-Type':'application/json','X-Estimator-Token':bootstrap.token},body:JSON.stringify(body)});const result=await response.json();assert(response.ok,result.error);return result;};
+  const original={name:'Работа <лист>',supplier,article:'SKU-01',unit:'лист',price:'100',quantity:'5',increment:'2',minimum_charge:'50',category:'work',note:'Важные условия: обработка отдельно',confirmed:true,source:'Исходный прайс',price_date:'2026-09-01'};
+  const catalog=await api('save',{kind:'catalog',name:original.name,data:original});
+  const order=await api('save',{kind:'order',name:'Заказ до обновления '+sourceName,data:{project:{title:'Заказ до обновления'},rows:[{...original,id:'saved-before-prices'}]}});
+  d.querySelector('[data-tab="price-updates"]').click();
+  input(el('name'),sourceName);input(el('supplier'),supplier);input(el('date'),'2026-09-13');localFile();
+  el('read').click();el('read').click();await wait(()=>!el('document-box').hidden&&!el('read').disabled,'local CSV read');
+  assert.equal(requests.filter(item=>item.path==='/api/prices/read').length,1,'Double read clicks must not send duplicate requests.');
+  assert.equal(el('review').hidden,true,'First read requires explicit column mapping.');
+  assert(!el('sample').querySelector('лист'),'Source text must be escaped.');
+  for(const [field,column]of Object.entries({name:0,article:1,unit:2,price:3,currency:4}))input(d.querySelector('#prices-mapping [data-column="'+field+'"]'),String(column));
+  el('preview').click();await wait(()=>!el('review').hidden&&!el('preview').disabled,'price preview');
+  const rows=el('changes').querySelectorAll('tbody tr');assert.equal(rows.length,2);assert.match(rows[0].textContent,/100,00/);assert.match(rows[0].textContent,/125,50/);assert.match(rows[0].textContent,/25\.50\s*%/);assert.match(rows[1].textContent,/Новая позиция/);
+  assert.equal(el('changes').querySelectorAll(':checked').length,0,'No price may be selected by default.');
+  assert.equal(el('apply').disabled,true);check(rows[0].querySelector('input'),true);assert.equal(el('apply').disabled,true,'Acknowledgement remains necessary.');
+  check(el('ack'),true);assert.equal(el('apply').disabled,false);
+  let changed=0;d.addEventListener('price-catalog-updated',()=>changed++);el('apply').click();el('apply').click();
+  await wait(()=>changed===1&&!el('read').disabled,'apply selected price');
+  assert.equal(requests.filter(item=>item.path==='/api/prices/apply').length,1);const applied=requests.find(item=>item.path==='/api/prices/apply').body;
+  assert.deepEqual(Object.keys(applied).sort(),['acknowledged','keys','preview_id']);assert.equal(applied.keys.length,1);
+  const updated=(await api('get',{kind:'catalog',id:catalog.id})).data;assert.equal(Number(updated.price),125.5);
+  for(const field of ['quantity','increment','minimum_charge','category','note'])assert.equal(updated[field],original[field],'Updating a price must retain '+field);
+  assert.equal(updated.confirmed,false);assert.equal(updated.price_observation.currency,'RUB');assert.equal(updated.price_observation.source_date,'2026-09-13');
+  assert.equal((await api('get',{kind:'order',id:order.id})).data.rows[0].price,'100','Saved orders must keep their old prices.');
+  assert(!(await api('list',{kind:'catalog'})).items.some(item=>item.data.supplier===supplier&&item.data.article==='SKU-02'),'Unselected new positions must not be saved.');
+  el('document').click();await wait(()=>downloads.length===1,'download original supplier file');assert(downloads[0].name.endsWith('.csv'));assert.deepEqual(Buffer.from(await downloads[0].blob.arrayBuffer()),raw,'The downloaded document must preserve the original bytes.');
+  el('save').click();await wait(()=>el('status').textContent.startsWith('Подключение сохранено')&&!el('save').disabled,'save source settings');
+  const saved=(await api('list',{kind:'price_source'})).items.find(item=>item.name===sourceName);assert(saved);assert.equal(saved.data.mapping.price,3);assert.equal(saved.data.supplier,supplier);
+  // A saved catalogue card must expose its original document after the current
+  // supplier-reading session has been cleared, using only the local document API.
+  el('new').click();assert.equal(el('document-box').hidden,true);
+  const readsBeforeReopen=requests.filter(item=>item.path==='/api/prices/read').length;
+  d.querySelector('[data-tab="own"]').click();
+  const originalButton=()=>d.querySelector('[data-own-action="source-document"][data-id="'+catalog.id+'"]');
+  await wait(()=>!!originalButton(),'saved catalogue source-document button');
+  originalButton().click();await wait(()=>downloads.length===2,'download source document from saved catalogue card');
+  assert.deepEqual(Buffer.from(await downloads[1].blob.arrayBuffer()),raw,'The saved catalogue card must recover the original bytes.');
+  assert.equal(requests.filter(item=>item.path==='/api/prices/read').length,readsBeforeReopen,'Reopening the stored source must not fetch a supplier.');
+  d.querySelector('[data-tab="price-updates"]').click();input(el('source-select'),saved.id);assert.equal(el('supplier').value,supplier);assert.equal(el('name').value,sourceName);assert.equal(el('date').value,'2026-09-13');assert.equal(el('review').hidden,true);
+  localFile();el('read').click();await wait(()=>!el('review').hidden&&!el('read').disabled,'saved mapping automatically previews new read');
+  const unchanged=el('changes').querySelector('tbody tr');assert.match(unchanged.textContent,/Цена прежняя · обновить сведения/);assert.equal(unchanged.querySelector('input').disabled,false);assert.equal(el('changes').querySelectorAll(':checked').length,0);
+  // A deferred local response from an old URL must not attach to new settings.
+  const realFetch=w.fetch;let release;
+  w.fetch=(url,options)=>String(url)==='/api/prices/read'?new Promise(resolve=>{release=()=>realFetch(url,options).then(resolve);}):realFetch(url,options);
+  el('read').click();await wait(()=>!!release,'hold local price read');input(el('url'),'https://supplier.invalid/changed.csv');
+  await release();await new Promise(resolve=>setTimeout(resolve,80));assert.equal(el('document-box').hidden,true);assert.equal(el('review').hidden,true);w.fetch=realFetch;
+  d.querySelector('[data-tab="price-monitor"]').click();
+  await wait(()=>!!d.querySelector('#monitor-sources [data-source="'+saved.id+'"]'),'schedule source list');
+  assert.equal($('price-monitor').hidden,false);
+  const scheduleRow=d.querySelector('#monitor-sources [data-source="'+saved.id+'"]');
+  assert.equal(scheduleRow.querySelector('[data-enabled]').checked,false);
+  scheduleRow.querySelector('[data-check]').click();
+  await wait(()=>$('monitor-journal').textContent.includes('Введите прямую ссылку'),'failed check visible in journal');
+  assert.equal(requests.filter(item=>item.path==='/api/prices/apply').length,1,'A scheduled check cannot apply prices.');
+  d.querySelector('[data-tab="advanced-geometry"]').click();
+  assert.equal($('advanced-geometry').hidden,false);
+  $('geometry-layout-form').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+  await wait(()=>!$('geometry-add-sheets').disabled,'mixed layout calculated');
+  assert.match($('geometry-layout-result').textContent,/Листов: 1/);
+  const oldRows=$('rows-body').children.length;$('geometry-add-sheets').click();
+  await wait(()=>$('rows-body').children.length===oldRows+1,'sheet quantity appended');
+  d.querySelector('[data-tab="advanced-geometry"]').click();
+  const svgRaw=fs.readFileSync(path.join(root,'examples/cutting_demo.svg'));
+  Object.defineProperty($('geometry-file'),'files',{configurable:true,value:[{name:'drawing.svg',size:svgRaw.length,arrayBuffer:async()=>Uint8Array.from(svgRaw).buffer}]});
+  $('geometry-vector-form').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+  await wait(()=>!$('geometry-add-cut').disabled,'SVG measured');
+  assert.match($('geometry-vector-result').textContent,/1.000000 пог. м/);
+  const stockMaterial=await api('save',{kind:'catalog',name:'Материал склада',data:{name:'Материал склада',unit:'лист',price:'10',quantity:'1',category:'material'}});
+  d.querySelector('[data-tab="stock"]').click();
+  await wait(()=>Array.from($('advanced-stock-item').options).some(option=>option.value===stockMaterial.id),'inventory selectors');
+  input($('advanced-stock-item'),stockMaterial.id);input($('advanced-stock-quantity'),'5');input($('advanced-stock-note'),'Учебная накладная');
+  $('advanced-stock-form').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+  await wait(()=>$('advanced-stock-balances').textContent.includes('Материал склада')&&!$('advanced-stock-submit').disabled,'inventory receipt');
+  input($('advanced-stock-kind'),'reserve');input($('advanced-stock-order'),order.id);input($('advanced-stock-quantity'),'2');
+  $('advanced-stock-form').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+  await wait(()=>$('advanced-stock-reservations').textContent.includes('Материал склада')&&!$('advanced-stock-submit').disabled,'inventory reservation');
+  let before=downloads.length;$('advanced-docx').click();await wait(()=>downloads.length===before+1,'customer Word export');assert(downloads.at(-1).name.endsWith('.docx'));
+  before=downloads.length;$('advanced-xlsx').click();await wait(()=>downloads.length===before+1,'editable Excel export');assert(downloads.at(-1).name.endsWith('.xlsx'));
+  before=downloads.length;$('advanced-backup').click();await wait(()=>downloads.length===before+1,'full backup ZIP');assert(downloads.at(-1).name.endsWith('.zip'));
+  assert.equal($('advanced-use-dadata').checked,false);assert.equal($('advanced-use-tavily').checked,false);
+  assert.equal(requests.filter(item=>item.path.startsWith('/api/secrets/')).length,0,'Credentials must not be read or saved implicitly.');
+  assert.deepEqual(errors,[]);console.log('Supplier UI integration passed: CSV, guarded apply, preserved catalogue terms/orders, original file and reopening from catalogue, saved source, unchanged price and stale response.');
+})().then(()=>dom.window.close()).catch(error=>{console.error(error);dom.window.close();process.exitCode=1;});

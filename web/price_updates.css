@@ -1,0 +1,38 @@
+/* Supplier price review uses the existing estimator colours and typography. */
+#price-updates>.card{margin:18px 0}
+.prices-connections{display:flex;align-items:end;gap:10px;flex-wrap:wrap}
+.prices-connections>label{flex:1;min-width:220px}
+.prices-source-card>.form-grid{margin:18px 0}
+.prices-source-card>p{margin:12px 0}
+.prices-field-note{display:block;font-weight:400;color:var(--muted);margin-top:5px}
+.prices-file-row{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin-top:20px}
+.prices-file-row>label{flex:1;min-width:220px}
+.prices-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:18px 0}
+.prices-status{padding:14px 17px;border-radius:9px;background:#eaf2ef;color:var(--green);font-size:13px;margin:18px 0}
+.prices-document-meta{display:grid;gap:7px;font-size:12px;overflow-wrap:anywhere}
+.prices-document-meta>strong{font-size:14px}
+.prices-document-meta>span{color:var(--muted)}
+#prices-table-options>.form-grid{margin:18px 0}
+#prices-mapping{grid-template-columns:repeat(3,minmax(0,1fr))}
+.prices-scroll{overflow:auto;max-height:600px}
+.prices-scroll .workspace-table{margin-top:12px}
+.prices-scroll caption{text-align:left;padding:10px 0;color:var(--muted);font-size:12px}
+.prices-scroll .workspace-table th{position:sticky;top:0}
+.prices-changes-table{min-width:900px}
+.prices-changes-table input[type=checkbox]{min-width:17px;cursor:pointer}
+.prices-changes-table td:nth-child(2){min-width:230px}
+.prices-changes-table td>span{display:block;font-size:11px;color:var(--muted);margin-top:5px}
+.prices-changes-table td>span.prices-action{display:inline-block;color:var(--green);padding:3px 6px;border-radius:5px;background:#eaf2ef;font-weight:600}
+.prices-changes-table td>span.prices-action-new{background:#edf1fb;color:#455e91}
+.prices-changes-table td>span.prices-action-unchanged{background:#f2f4f5;color:var(--muted)}
+.prices-amount{font-variant-numeric:tabular-nums;white-space:nowrap}
+.prices-warning{color:var(--warn);font-size:12px;margin:12px 0}
+.prices-changes-table .prices-warning{max-width:280px;margin-top:8px}
+.prices-issues:empty{display:none}
+.prices-issues{margin:18px 0;padding:16px;background:#fff7e9;border:1px solid #efdfbe;border-radius:8px;font-size:12px}
+.prices-issues h3{font-size:14px}
+.prices-issues ul{margin-bottom:0;max-height:260px;overflow:auto;padding-left:20px}
+.prices-confirm{padding:18px 0;border-top:1px solid var(--line);margin-top:18px;max-width:850px;font-size:13px}
+#prices-preview{margin-top:18px}
+@media(max-width:1050px){#prices-mapping{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){#prices-mapping{grid-template-columns:1fr}.prices-connections,.prices-file-row{align-items:stretch}.prices-connections>label,.prices-file-row>label{min-width:100%}.prices-connections button{font-size:12px;flex:1}.prices-actions button{font-size:12px}.prices-changes-table{min-width:800px}}

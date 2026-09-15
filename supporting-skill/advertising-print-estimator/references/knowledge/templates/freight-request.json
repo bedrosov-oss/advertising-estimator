@@ -1,0 +1,34 @@
+{
+  "template": true,
+  "website_id": "W07",
+  "source_id": "S30",
+  "origin_city": null,
+  "destination_city": null,
+  "pickup_type": null,
+  "delivery_type": null,
+  "packages": [
+    {
+      "quantity": null,
+      "length_mm": null,
+      "width_mm": null,
+      "height_mm": null,
+      "gross_weight_kg": null
+    }
+  ],
+  "cargo_description": null,
+  "protective_packaging": null,
+  "loading": null,
+  "unloading": null,
+  "declared_value_minor": null,
+  "currency": "RUB",
+  "quote_result": {
+    "total_minor": null,
+    "vat_status": null,
+    "valid_until": null,
+    "checked_at": null,
+    "included_services": [],
+    "excluded_services": [],
+    "source_url": null
+  },
+  "note": "Авторский бланк подготовки данных. Это не API ПЭК и не отправленная заявка; размеры относятся к упакованным местам."
+}

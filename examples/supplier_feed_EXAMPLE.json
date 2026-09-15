@@ -1,0 +1,15 @@
+[
+  {
+    "name": "УЧЕБНЫЙ ПВХ белый 3 мм 2030×3050",
+    "article": "DEMO-PVC-3",
+    "material_key": "PVC-WHITE-3-2030x3050",
+    "unit": "лист",
+    "price": "1200",
+    "currency": "RUB",
+    "tax_basis": "vat_included",
+    "available": true,
+    "available_quantity": "20",
+    "minimum_quantity": "1",
+    "package_step": "1"
+  }
+]

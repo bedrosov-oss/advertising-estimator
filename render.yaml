@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: advertising-estimator
+    runtime: python
+    plan: 1c-2g
+    region: frankfurt
+    buildCommand: pip install --require-hashes -r requirements-web-lock.txt && python scripts/check_release.py
+    startCommand: python -X utf8 -B web_host.py
+    healthCheckPath: /healthz
+    autoDeployTrigger: checksPass
+    disk:
+      name: estimator-projects
+      mountPath: /var/data/estimator
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14
+      - key: PYTHONUTF8
+        value: "1"
+      - key: ESTIMATOR_DATA_DIR
+        value: /var/data/estimator
+      - key: ESTIMATOR_OWNER_PASSWORD
+        sync: false
+      - key: APISHIP_TOKEN
+        sync: false
