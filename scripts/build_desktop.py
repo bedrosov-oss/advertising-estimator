@@ -9,6 +9,15 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 
+def is_license_document(entry):
+    name=Path(str(entry)).name.lower()
+    stem=Path(name).stem
+    return (name.startswith(('license','licence','copying','notice'))
+            and Path(name).suffix in ('','.txt','.md','.rst','.html','.lesser','.gpl','.lgpl','.bsd','.apache')
+            and (stem in ('license','licence','copying','notice')
+                 or stem.startswith(('license-','license.','license_','licence-',
+                                     'copying-','copying.','copying_','notice-'))))
+
 def verify_executable(executable, report_path, expected_version):
     report_path.unlink(missing_ok=True)
     subprocess.run([str(executable),'--self-test-report',str(report_path)],check=True,timeout=120)
@@ -38,11 +47,13 @@ def main():
     for name in ('PIL','reportlab','bs4','xlsxwriter','jinja2.ext'):
         args+=['--hidden-import',name]
     if sys.platform=='win32':args+=['--collect-all','pythonnet','--collect-all','clr_loader']
-    licenses=ROOT/'build-native/licenses';licenses.mkdir(parents=True,exist_ok=True)
+    licenses=ROOT/'build-native/licenses'
+    if licenses.exists():shutil.rmtree(licenses)
+    licenses.mkdir(parents=True,exist_ok=True)
     for dist in importlib.metadata.distributions():
         name=dist.metadata.get('Name','package')
         for entry in dist.files or []:
-            if str(entry).rsplit('/',1)[-1].lower().startswith(('license','copying','notice')):
+            if is_license_document(entry):
                 source=Path(dist.locate_file(entry))
                 if source.is_file() and source.stat().st_size<2*1024*1024:
                     target_file=licenses/name/str(entry).replace('/','_');target_file.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,target_file)

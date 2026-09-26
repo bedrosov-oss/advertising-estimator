@@ -15,6 +15,9 @@ import server
 
 
 def self_test():
+    # Check in the frozen process before the worker translates import failures
+    # into a user-facing message. The report retains the actual loader error.
+    import pdfplumber
     import engine
     required=('web/index.html','web/app.js','web/workspace.js','web/price_updates.js','web/monitor.js','data/prices.json','examples/demo.json','fonts/DejaVuSans.ttf')
     for name in required:
