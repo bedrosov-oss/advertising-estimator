@@ -31,7 +31,10 @@ def read_pdf(raw, source):
 
 def extract(path, source):
     try:import pdfplumber
-    except ImportError:raise ValueError('Для PDF установите дополнения: SETUP_FEATURES.command / SETUP_FEATURES.bat.') from None
+    except ImportError:
+        if getattr(sys,'frozen',False):
+            raise ValueError('В готовой сборке не загрузился PDF-модуль. Скачайте исправленную сборку для вашей системы; установка дополнений исходников не изменит это приложение.') from None
+        raise ValueError('Для PDF установите дополнения: SETUP_FEATURES.command / SETUP_FEATURES.bat.') from None
     page_number=source['sheet'];mode=source.get('pdf_mode','text');warnings=[]
     with pdfplumber.open(path) as pdf:
         if not 1<=len(pdf.pages)<=80:raise ValueError('Поддерживается PDF от 1 до 80 страниц. Разделите большой прайс.')
